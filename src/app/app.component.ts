@@ -20,11 +20,21 @@ export class AppComponent implements OnInit{
 
   constructor(private dialog: MatDialog, private api: ApiService) { }
 
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
+//   category: "Fruits"
+// comment: "a"
+// date: "2022-03-07T18:30:00.000Z"
+// freshness: "Brand New"
+// id: 1
+// productName: "a"
+// productPrice: 90
+
+  displayedColumns: string[] = ['id', 'productName', 'category', 'freshness','date','productPrice'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator !: MatPaginator;
   @ViewChild(MatSort) sort !: MatSort;
+
+
 
 
   ngOnInit():void{
@@ -41,7 +51,10 @@ export class AppComponent implements OnInit{
     this.api.getProductData().
     subscribe({
       next:(response)=>{
-        console.log(response);
+        // console.log(response);
+        this.dataSource=new MatTableDataSource(response);
+        this.dataSource.paginator= this.paginator;
+        this.dataSource.sort=this.sort;
       },
       error:(error)=>{
       alert("Error while fatching Records !!");
