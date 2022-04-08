@@ -15,6 +15,8 @@ export class DialogComponent implements OnInit {
   //should be like your form name
   productForm !:FormGroup;
 
+  actionBtn:string='Save'
+
   constructor(private formBuilder:FormBuilder, private api:ApiService,
     @Inject(MAT_DIALOG_DATA) public editData:any,
      private dialogRef:MatDialogRef<DialogComponent>) { }
@@ -28,6 +30,18 @@ export class DialogComponent implements OnInit {
       productPrice:['',Validators.required],
       comment:['',Validators.required]
     })
+    if(this.editData){
+      this.actionBtn='update'
+      this.productForm.controls['productName'].setValue(this.editData.productName);
+      this.productForm.controls['category'].setValue(this.editData.category);
+      this.productForm.controls['date'].setValue(this.editData.date);
+      this.productForm.controls['freshness'].setValue(this.editData.freshness);
+      this.productForm.controls['productPrice'].setValue(this.editData.productPrice);
+      this.productForm.controls['comment'].setValue(this.editData.comment );
+
+    }
+
+    // console.log(this.editData);
   }
 
   addProduct(){

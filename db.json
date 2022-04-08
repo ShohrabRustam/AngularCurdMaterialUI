@@ -26,6 +26,24 @@
       "productPrice": 75000,
       "comment": "Iphone 12",
       "id": 3
+    },
+    {
+      "productName": "a",
+      "category": "Fruits",
+      "date": "2022-03-07T18:30:00.000Z",
+      "freshness": "Brand New",
+      "productPrice": 90,
+      "comment": "a",
+      "id": 4
+    },
+    {
+      "productName": "Soya",
+      "category": "Electronics",
+      "date": "2022-03-07T18:30:00.000Z",
+      "freshness": "Brand New",
+      "productPrice": 10,
+      "comment": "Soya Chap ",
+      "id": 5
     }
   ],
   "comments": [
