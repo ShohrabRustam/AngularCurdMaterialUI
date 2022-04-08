@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DialogComponent implements OnInit {
 
+  freshnessList:string[]=["Brand New", "Second Hand", "Refurbished"]
   constructor() { }
 
   ngOnInit(): void {
