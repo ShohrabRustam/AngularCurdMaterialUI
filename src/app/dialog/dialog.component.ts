@@ -32,11 +32,16 @@ export class DialogComponent implements OnInit {
     if(this.productForm.valid){
       this.api.postProductData(this.productForm.value)
       .subscribe({
+        // next is the observer type
         next:(response)=>{
           alert("Product Added !!!")
+        },
+        error:()=>{
+            alert('While Added Product !!! ');
         }
       });
     }
+
   }
 
 }
