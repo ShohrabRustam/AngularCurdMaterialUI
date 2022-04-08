@@ -15,7 +15,7 @@ export class DialogComponent implements OnInit {
   //should be like your form name
   productForm !:FormGroup;
 
-  constructor(private formBuilder:FormBuilder, private api:ApiService) { }
+  constructor(private formBuilder:FormBuilder, private api:ApiService, private dialogRef:MatDialogRef<DialogComponent>) { }
 
   ngOnInit(): void {
     this.productForm=this.formBuilder.group({
