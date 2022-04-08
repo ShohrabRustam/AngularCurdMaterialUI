@@ -25,6 +25,9 @@ import {MatNativeDateModule} from '@angular/material/core'
 
 import {MatRadioModule} from '@angular/material/radio';
 
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -45,7 +48,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatRadioModule
+    MatRadioModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
