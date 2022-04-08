@@ -20,6 +20,13 @@ export class AppComponent implements OnInit{
 
   constructor(private dialog: MatDialog, private api: ApiService) { }
 
+  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
+  dataSource!: MatTableDataSource<any>;
+
+  @ViewChild(MatPaginator) paginator !: MatPaginator;
+  @ViewChild(MatSort) sort !: MatSort;
+
+
   ngOnInit():void{
     this.getAllProducts();
   }
@@ -41,5 +48,15 @@ export class AppComponent implements OnInit{
       }
     });
   }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
 
 }
