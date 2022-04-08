@@ -16,7 +16,6 @@ export class ApiService {
     return this.http.post<any>(this.url,data);
   }
 
-
   //get product data
   getProductData(){
     return this.http.get<any>(this.url);
