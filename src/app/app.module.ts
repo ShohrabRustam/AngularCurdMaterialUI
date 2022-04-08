@@ -29,6 +29,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -53,7 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatRadioModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
 
   ],
   providers: [],
