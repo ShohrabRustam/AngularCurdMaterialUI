@@ -27,6 +27,8 @@ import {MatRadioModule} from '@angular/material/radio';
 
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -50,7 +52,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     MatNativeDateModule,
     MatRadioModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],
