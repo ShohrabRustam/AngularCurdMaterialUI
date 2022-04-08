@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
 // productName: "a"
 // productPrice: 90
 
-  displayedColumns: string[] = ['id', 'productName', 'category', 'freshness','date','productPrice'];
+  displayedColumns: string[] = ['id', 'productName', 'category', 'freshness','date','productPrice', 'action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator !: MatPaginator;
