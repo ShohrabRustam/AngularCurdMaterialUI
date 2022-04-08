@@ -67,6 +67,7 @@ export class AppComponent implements OnInit{
       .subscribe({
         next:(response)=>{
         alert("deleted Successfully !!");
+        this.getAllProducts();
         },
         error:()=>{
           alert("error while deleting the records");
