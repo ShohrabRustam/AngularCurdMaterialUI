@@ -11,6 +11,7 @@ export class DialogComponent implements OnInit {
 
   freshnessList:string[]=["Brand New", "Second Hand", "Refurbished"];
 
+  //should be like your form name
   productForm !:FormGroup;
 
   constructor(private formBuilder:FormBuilder, private api:ApiService) { }
@@ -27,7 +28,10 @@ export class DialogComponent implements OnInit {
   }
 
   addProduct(){
-    console.log(this.productForm.value);
+    // console.log(this.productForm.value);
+    if(this.productForm.valid){
+
+    }
   }
 
 }
