@@ -1,4 +1,4 @@
-import { Component,Inject } from '@angular/core';
+import { Component,Inject, OnInit } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { ApiService } from './services/api.service';
@@ -9,11 +9,16 @@ import { ApiService } from './services/api.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'AngularCurdMaterialUI';
 
   constructor(private dialog:MatDialog, private api :ApiService)
   {}
+
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.');
+    this.getAllProducts();
+  }
 
   openDialog() {
     this.dialog.open(DialogComponent, {
