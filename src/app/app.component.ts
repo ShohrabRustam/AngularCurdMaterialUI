@@ -47,6 +47,13 @@ export class AppComponent implements OnInit{
     });
   }
 
+  editProduct(row:any){
+    this.dialog.open(DialogComponent,{
+    width:'30%',
+    data:row
+    });
+  }
+
   getAllProducts(){
     this.api.getProductData().
     subscribe({
