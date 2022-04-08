@@ -22,7 +22,14 @@ export class AppComponent {
   }
 
   getAllProducts(){
-
+    this.api.getProductData().subscribe({
+      next:(response)=>{
+        console.log(response);
+      },
+      error:(error)=>{
+        alert('Error while fatching Records !!');
+      }
+    })
   }
 
 }
