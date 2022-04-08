@@ -17,6 +17,15 @@
       "productPrice": 100000,
       "comment": "Best Laptop ",
       "id": 2
+    },
+    {
+      "productName": "Iphone 12",
+      "category": "Electronics",
+      "date": "2022-03-07T18:30:00.000Z",
+      "freshness": "Brand New",
+      "productPrice": 75000,
+      "comment": "Iphone 12",
+      "id": 3
     }
   ],
   "comments": [
