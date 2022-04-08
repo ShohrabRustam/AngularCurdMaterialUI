@@ -30,7 +30,12 @@ export class DialogComponent implements OnInit {
   addProduct(){
     // console.log(this.productForm.value);
     if(this.productForm.valid){
-
+      this.api.postProductData(this.productForm.value)
+      .subscribe({
+        next:(response)=>{
+          alert("Product Added !!!")
+        }
+      });
     }
   }
 
