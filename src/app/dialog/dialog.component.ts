@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ApiService } from '../services/api.service';
+import {MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dialog',
@@ -34,7 +35,8 @@ export class DialogComponent implements OnInit {
       .subscribe({
         // next is the observer type
         next:(response)=>{
-          alert("Product Added !!!")
+          alert("Product Added !!!");
+          this.productForm.reset ();
         },
         error:()=>{
             alert('While Added Product !!! ');
