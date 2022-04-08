@@ -1,7 +1,7 @@
 {
   "productList": [
     {
-      "productName": "a",
+      "productName": "ABCD",
       "category": "Fruits",
       "date": "2022-03-07T18:30:00.000Z",
       "freshness": "Brand New",
@@ -28,7 +28,7 @@
       "id": 3
     },
     {
-      "productName": "a",
+      "productName": "Shohrab Rustam",
       "category": "Fruits",
       "date": "2022-03-07T18:30:00.000Z",
       "freshness": "Brand New",
@@ -37,12 +37,12 @@
       "id": 4
     },
     {
-      "productName": "Soya",
+      "productName": "Rustam",
       "category": "Electronics",
       "date": "2022-03-07T18:30:00.000Z",
       "freshness": "Brand New",
       "productPrice": 10,
-      "comment": "Soya Chap ",
+      "comment": "Name",
       "id": 5
     }
   ],
