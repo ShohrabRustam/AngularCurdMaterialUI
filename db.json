@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "productName": "Khan",
+      "category": "Fruits",
+      "date": "2022-03-07T18:30:00.000Z",
+      "freshness": "Brand New",
+      "productPrice": 90,
+      "comment": "a",
+      "id": 1
+    },
+    {
+      "productName": "Iphone 12",
+      "category": "Electronics",
+      "date": "2022-03-07T18:30:00.000Z",
+      "freshness": "Brand New",
+      "productPrice": 75000,
+      "comment": "Iphone 12",
+      "id": 3
+    },
+    {
+      "productName": "Rustam",
+      "category": "Electronics",
+      "date": "2022-03-07T18:30:00.000Z",
+      "freshness": "Brand New",
+      "productPrice": 10,
+      "comment": "Name",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
