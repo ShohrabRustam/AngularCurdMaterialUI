@@ -18,9 +18,9 @@ export class DialogComponent implements OnInit {
     this.productForm=this.formBuilder.group({
       productName: ['',Validators.required],
       category:['',Validators.required],
-      freshness:['',Validators.required],
-      producPrice:['',Validators.required],
       date:['',Validators.required],
+      freshness:['',Validators.required],
+      productPrice:['',Validators.required],
       comment:['',Validators.required]
     })
   }
