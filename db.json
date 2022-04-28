@@ -5,7 +5,7 @@
       "category": "Fruits",
       "date": "2022-03-07T18:30:00.000Z",
       "freshness": "Brand New",
-      "productPrice": 90,
+      "productPrice": 900,
       "comment": "a",
       "id": 1
     },
@@ -20,12 +20,12 @@
     },
     {
       "productName": "Rustam",
-      "category": "Electronics",
-      "date": "2022-03-07T18:30:00.000Z",
+      "category": "Vegetables",
+      "date": "2022-04-12T18:30:00.000Z",
       "freshness": "Brand New",
-      "productPrice": 10,
-      "comment": "Name",
-      "id": 5
+      "productPrice": 900,
+      "comment": "g;kugasiufg",
+      "id": 6
     }
   ],
   "comments": [
